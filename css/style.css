@@ -1339,7 +1339,7 @@ li {
 	right: -10px;
 	top: 0;
 	content: "";
-	font-family: "FontAwesome";
+	/* font-family: "FontAwesome"; */
 }
 
 .breadcrumb-text .breadcrumb-option span {
@@ -2803,12 +2803,12 @@ li {
 /* Product List Section Begin  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
+/* * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif
-}
+} */
 
 
 
@@ -3393,13 +3393,9 @@ input[type=range]::-webkit-slider-thumb {
 
 
 /* Product detail section */
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	overflow-x: hidden;
-  }
   
   img {
-	max-width: 100%;
+	max-width: 80%;
   }
   
   .preview {
@@ -3494,9 +3490,9 @@ body {
   
   .colors {
 	-webkit-box-flex: 1;
-	-webkit-flex-grow: 1;
+	-webkit-flex-grow: 0.5;
 	-ms-flex-positive: 1;
-	flex-grow: 1;
+	flex-grow: 0.5;
   }
   
   .product-title,
@@ -3547,9 +3543,8 @@ body {
   }
   
   .add-to-cart {
-	background: #33A0FF;
-	padding: 2px;
-	padding-left: 30px;
+	background: linear-gradient(to right, #eb3c5a, #f67831);;
+	padding: 10px;
 	width: 170px;
 	border: none;
 	/* text-transform: UPPERCASE;   */
@@ -3561,15 +3556,14 @@ body {
   }
   
   .add-to-cart:hover {
-	background: #b36800;
+	background:red;
 	color: rgb(255, 255, 255);
 	text-decoration: none;
   }
   
   .buy-now {
-	background: #33A0FF;
-	padding: 2px;
-	padding-left: 30px;
+	background: linear-gradient(to right, #eb3c5a, #f67831);;
+	padding: 10px;
 	width: 90px;
 	border: none;
 	/* text-transform: UPPERCASE;   */
@@ -3581,7 +3575,7 @@ body {
   }
   
   .buy-now:hover {
-	background: #b36800;
+	background: red;
 	color: rgb(255, 255, 255);
 	text-decoration: none;
   }
