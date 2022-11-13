@@ -731,8 +731,8 @@
 	color: #ffffff;
 	font-weight: 600;
 	width: 50%;
-	background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
-	background: -o-linear-gradient(left, #eb3c5a, #f67831);
+	/* background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
+	background: -o-linear-gradient(left, #eb3c5a, #f67831); */
 	background: linear-gradient(to right, #eb3c5a, #f67831);
 	border: none;
 	padding: 12px 0;
@@ -1130,7 +1130,7 @@
 
 .schedule-table table thead tr th {
 	font-size: 16px;
-	color: #000000;
+	color: #000000; 
 	font-weight: 600;
 	text-transform: uppercase;
 	padding: 25px 0;
@@ -1834,7 +1834,7 @@
 }
 
 .btn-registerclass {
-	background-color: #f93434;
+	background:linear-gradient(to right, #eb3c5a, #f67831);
 	color: white;
 	float: right;
 	margin-right: 10px;
@@ -2757,7 +2757,7 @@ input[type=range]::-webkit-slider-thumb {
   
   .checked,
   .price span {
-	color: #999;
+	color: yellow;
 	font-weight: 400;
   }
   
@@ -2859,7 +2859,7 @@ input[type=range]::-webkit-slider-thumb {
   .tooltip-inner {
 	padding: 1.3em;
   }
-  
+ 
   /* comment section */
   
   
