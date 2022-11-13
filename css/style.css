@@ -2801,16 +2801,6 @@ li {
 }
 
 /* Product List Section Begin  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-/* * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif
-} */
-
-
 
 .product-list {
 	margin: 40px auto
@@ -3393,7 +3383,6 @@ input[type=range]::-webkit-slider-thumb {
 
 
 /* Product detail section */
-  
   img {
 	max-width: 80%;
   }
