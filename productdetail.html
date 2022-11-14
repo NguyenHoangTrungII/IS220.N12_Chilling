@@ -8,7 +8,7 @@
     <title>Chi tiết sản phẩm</title>
 
     <!-- Google Font -->
-    
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -143,10 +143,34 @@
                                     data-toggle="tooltip" title="large">l</span> <span class="size"
                                     data-toggle="tooltip" title="xtra large">xl</span>
                             </h5>
-                            <h5 class="colors">Màu: <span class="color orange not-available" data-toggle="tooltip"
-                                    title="Not In store"></span> <span class="color green"></span> <span
-                                    class="color blue"></span>
-                            </h5>
+                           
+
+                            <span>
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-star colors my-2">
+                                        <div class="text-center mt-auto">
+                                            <h5><strong>Màu: </strong></h5>
+                                        </div>
+
+                                        <div class="btn-group" data-toggle="buttons" data-tooltip="tooltip"
+                                            data-placement="right" title="choose color"> <label
+                                                class="btn btn-light border form-check-label"> <input
+                                                    class="form-check-input" type="radio" autocomplete="off"> </label>
+                                            <label class="btn btn-blue form-check-label active"> <input
+                                                    class="form-check-input" type="radio" autocomplete="off"> </label>
+                                            <label class="btn btn-green form-check-label"> <input
+                                                    class="form-check-input" type="radio" autocomplete="off"> </label>
+                                            <label class="btn btn-orange form-check-label"> <input
+                                                    class="form-check-input" type="radio" autocomplete="off"> </label>
+                                            <label class="btn btn-pink form-check-label"> <input
+                                                    class="form-check-input" type="radio" autocomplete="off"> </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </span>
+
+
                             <div class="action">
                                 <a href="#" target="_blank"> <button class="buy-now" type="button">Mua ngay</button>
                                 </a>
@@ -176,7 +200,7 @@
                     <!-- Tab panes -->
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane active" id="home">
-                            <div class="container"> 
+                            <div class="container">
                                 <h3>Thông số kĩ thuật</h3>
                                 <table class="table table-hover">
                                     <tbody>
@@ -226,49 +250,61 @@
                                 nước.</p>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="messages">
-                            <div class="container mt-5">
-                                <div class="d-flex justify-content-center row">
-                                    <div class="col-md-8">
-                                        <div class="d-flex flex-column comment-section">
-                                            <div class="bg-white p-2">
-                                                <div class="d-flex flex-row user-info"><img class="rounded-circle"
-                                                        src="https://i.imgur.com/RpzrMR2.jpg" width="40">
-                                                    <div class="d-flex flex-column justify-content-start ml-2"><span
-                                                            class="d-block font-weight-bold name">Marry
-                                                            Andrews</span><span class="date text-black-50">Shared
-                                                            publicly - Jan 2020</span>
+                            <div class="row d-flex justify-content-star mt-100 mb-100">
+                                <div class="col-lg-6">
+                                    <div class="card-comment">
+                                        
+                                        <div class="comment-widgets">
+                                            <!-- Comment Row -->
+                                            <div class="d-flex flex-row comment-row m-t-0">
+                                                <div class="p-2"><img src="./img/icon/icon-1.png" alt="user"
+                                                        width="50" class="rounded-circle"></div>
+                                                <div class="comment-text w-100">
+                                                    <h6 class="font-medium">Trần Nhật Sinh</h6> <span
+                                                        class="m-b-15 d-block">This is awesome website. I would love to
+                                                        comeback again. </span>
+                                                    <div class="comment-footer"> <span
+                                                            class="text-muted float-right">April 14, 2022</span> <button
+                                                            type="button" class="btn btn-cyan btn-sm">Edit</button>
+                                                        <button type="button"
+                                                            class="btn btn-success btn-sm">Publish</button> <button
+                                                            type="button" class="btn btn-danger btn-sm">Delete</button>
                                                     </div>
                                                 </div>
-                                                <div class="mt-2">
-                                                    <p class="comment-text">Lorem ipsum dolor sit amet, consectetur
-                                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                        consequat.</p>
+                                            </div> <!-- Comment Row -->
+                                            <div class="d-flex flex-row comment-row">
+                                                <div class="p-2"><img src="./img/icon/icon-1.png" alt="user"
+                                                        width="50" class="rounded-circle"></div>
+                                                <div class="comment-text active w-100">
+                                                    <h6 class="font-medium">Michael Hussey</h6> <span
+                                                        class="m-b-15 d-block">Thanks bbbootstrap.com for providing such
+                                                        useful snippets. </span>
+                                                    <div class="comment-footer"> <span
+                                                            class="text-muted float-right">May 10, 2022</span> <button
+                                                            type="button" class="btn btn-cyan btn-sm">Edit</button>
+                                                        <button type="button"
+                                                            class="btn btn-success btn-sm">Publish</button> <button
+                                                            type="button" class="btn btn-danger btn-sm">Delete</button>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- Comment Row -->
+                                            <div class="d-flex flex-row comment-row">
+                                                <div class="p-2"><img src="./img/icon/icon-1.png" alt="user"
+                                                        width="50" class="rounded-circle"></div>
+                                                <div class="comment-text w-100">
+                                                    <h6 class="font-medium">Johnathan Doeting</h6> <span
+                                                        class="m-b-15 d-block">Great industry leaders are not the real
+                                                        heroes of stock market. </span>
+                                                    <div class="comment-footer"> <span
+                                                            class="text-muted float-right">August 1, 2022</span> <button
+                                                            type="button" class="btn btn-cyan btn-sm">Edit</button>
+                                                        <button type="button"
+                                                            class="btn btn-success btn-sm">Publish</button> <button
+                                                            type="button" class="btn btn-danger btn-sm">Delete</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="bg-white">
-                                                <div class="d-flex flex-row fs-12">
-                                                    <div class="like p-2 cursor"><i class="fa fa-thumbs-o-up"></i><span
-                                                            class="ml-1">Like</span></div>
-                                                    <div class="like p-2 cursor"><i class="fa fa-commenting-o"></i><span
-                                                            class="ml-1">Comment</span></div>
-                                                    <div class="like p-2 cursor"><i class="fa fa-share"></i><span
-                                                            class="ml-1">Share</span></div>
-                                                </div>
-                                            </div>
-                                            <div class="bg-light p-2">
-                                                <div class="d-flex flex-row align-items-start"><img
-                                                        class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg"
-                                                        width="40"><textarea
-                                                        class="form-control ml-1 shadow-none textarea"></textarea></div>
-                                                <div class="mt-2 text-right"><button
-                                                        class="btn btn-primary btn-sm shadow-none" type="button">Post
-                                                        comment</button><button
-                                                        class="btn btn-outline-primary btn-sm ml-1 shadow-none"
-                                                        type="button">Cancel</button></div>
-                                            </div>
-                                        </div>
+                                        </div> <!-- Card -->
                                     </div>
                                 </div>
                             </div>
