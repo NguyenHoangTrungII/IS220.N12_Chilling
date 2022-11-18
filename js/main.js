@@ -1,12 +1,3 @@
-/*  ---------------------------------------------------
-    Template Name: Gutim
-    Description: Gutim Fitness HTML Template
-    Author: Colorlib
-    Author URI: http://colorlib.com
-    Version: 1.0
-    Created: Colorlib
----------------------------------------------------------  */
-
 'use strict';
 
 (function ($) {
@@ -134,7 +125,12 @@
         });
     });
 
-    /*------------------
+
+})(jQuery);
+
+
+
+/*------------------
        Product List
     --------------------*/
     // For Filters
@@ -263,6 +259,3 @@
             thumbRight.classList.remove("active");
         });
     });
-
-
-})(jQuery);
