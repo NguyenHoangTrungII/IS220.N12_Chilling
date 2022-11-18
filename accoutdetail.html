@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="vie">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giỏ hàng</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/reponsive.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="" alt="">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <nav class="mainmenu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./service.html">Dịch vụ</a></li>
+                        <li><a href="./class.html">Lớp</a></li>
+                        <li><a href="./productlist.html">Sản phẩm</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                        <li><a href="./about-us.html">Về chúng tôi</a></li>
+                    </ul>
+                </nav>
+                <a href="./login.html" class="primary-btn signup-btn">Đăng nhập</a>
+                <a href="./cart.html" class="primary-btn signup-btn">Giỏ hàng</a>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb/classes-breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <h2>TÀI KHOẢN</h2>
+                        <div class="breadcrumb-option">
+                            <a href="./index.html"><i class="fa fa-home"></i> Trang chủ</a>
+                            <span>Giỏ hàng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <section class=" account-detail-section spad">
+        <!-- <div class="container"> -->
+        <div class="bg-white rounded-lg d-block d-sm-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-3 pb-5">
+                        <div class="profile-tab-nav border">
+                            <div class="profile-setting">
+                                <div class="img-circle text-center mb-3">
+                                    <img src="./img/member.jpg" alt="Image" class="shadow">
+                                </div>
+                                <h4 class="text-center">Nguyễn Hoàng Trung</h4>
+                            </div>
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <a class="nav-link active" id="account-tab" data-toggle="pill" href="#info_account"
+                                    role="tab" aria-controls="account" aria-selected="true">
+                                    <i class="fa fa-home text-center mr-1"></i>
+                                    Tài khoản
+                                </a>
+                                <a class="nav-link" id="password-tab" data-toggle="pill" href="#password" role="tab"
+                                    aria-controls="password" aria-selected="false">
+                                    <i class="fa fa-key text-center mr-1"></i>
+                                    Mật khẩu
+                                </a>
+                                <!-- <a class="nav-link" id="security-tab" data-toggle="pill" href="#security" role="tab"
+                                    aria-controls="security" aria-selected="false">
+                                    <i class="fa fa-user text-center mr-1"></i>
+                                    Security
+                                </a> -->
+                                <a class="nav-link" id="application-tab" data-toggle="pill" href="#ordered" role="tab"
+                                    aria-controls="application" aria-selected="false">
+                                    <i class="fa fa-tv text-center mr-1"></i>
+                                    Đơn hàng
+                                </a>
+                                <a class="nav-link" id="notification-tab" data-toggle="pill" href="#notification"
+                                    role="tab" aria-controls="notification" aria-selected="false">
+                                    <i class="fa fa-bell text-center mr-1"></i>
+                                    Thông báo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8 col-lg-9 pb-5">
+                        <div class="tab-content account-details pl-3" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="info_account" role="tabpanel"
+                                aria-labelledby="account-tab">
+                                <h3 class="mb-4">Cài đặt tài khoản</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Họ Tên</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Tên hiển thị</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Email</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Số điện thoại</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Thành phố</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Địa chỉ</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group account-deatil">
+                                            <label>Địa chỉ nhận hàng</label>
+                                            <textarea class="form-control" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary account-details">Cập nhật</button>
+                                    <button class="btn btn-light account-details">Hủy</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                                <h3 class="mb-4">Đặt lại mặt khẩu</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Mật khẩu cũ</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Mật khẩu mới</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Xác nhận mật khẩu</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary account-details">Đặt lại</button>
+                                    <button class="btn btn-light account-details">Hủy</button>
+                                </div>
+                            </div>
+                            <!-- <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+                                <h3 class="mb-4">Security Settings</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Login</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <label>Two-factor auth</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group account-deatil">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="recovery">
+                                                <label class="form-check-label" for="recovery">
+                                                    Recovery
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary account-details">Update</button>
+                                    <button class="btn btn-light account-details">Cancel</button>
+                                </div>
+                            </div> -->
+                            <div class="tab-pane fade" id="ordered" role="tabpanel" aria-labelledby="application-tab">
+                                <div class="group-tabs">
+                                    <ul class="nav nav-tabs account-details order-details text-center" role="tablist">
+                                        <li role="presentation"><a href="#confirm-waiting"
+                                                aria-controls="confirm-waiting" role="tab" data-toggle="tab"
+                                                class="active-color"><span>Chờ xác nhận</span>
+                                            </a></li>
+                                        <li role="presentation"><a href="#confirmed" aria-controls="confirmed"
+                                                role="tab" data-toggle="tab" class="conffirmed">Đã xác nhận</a></li>
+                                        <li role="presentation"><a href="#shipping" aria-controls="shipping" role="tab"
+                                                data-toggle="tab">Đang vận chuyển</a></li>
+                                        <li role="presentation" class="need"><a href="#shipped" aria-controls="shipped"
+                                                role="tab" data-toggle="tab">Đã giao</a></li>
+                                        <li role="presentation"><a href="#cancel" aria-controls="cancel" role="tab"
+                                                data-toggle="tab">Đã hủy</a></li>
+                                    </ul>
+
+                                    <div class="tab-content  pt-3">
+                                        <div role="tabpanel" class="tab-pane needed active" id="confirm-waiting">
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <div class="card-product-ordered pt-4">
+                                                        <div class="card-product order-details">
+                                                            <nav class="status-check">
+
+                                                                <div class="status-tittle order-details">
+                                                                    <button class="fake-btn-status-check"
+                                                                        data-toggle="modal"
+                                                                        data-target="#status-check-header">Chờ xác nhận
+                                                                    </button>
+                                                                </div>
+                                                            </nav>
+                                                            <div class="row">
+                                                                <div class="col-3">
+                                                                    <div class="order-item-img">
+                                                                        <img
+                                                                            src="./img/blog/product_1.jpg">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-9">
+                                                                    <div class="description order-details">
+                                                                        <div class="contet-product-order">
+                                                                            <h2>Tên sản phẩm</h2>
+                                                                            <div class="qty-and-price">
+                                                                                <h2>số lượng</h2>
+                                                                                <h1>giá tiền</h1>
+                                                                            </div>
+
+                                                                            <div class="total-product order-detail">
+                                                                                <span class="tittle">TỔNG</span>
+                                                                                <span class="price-total">100.00đ</span>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <div class="btn-product-detail pt-4">
+                                                                        <button
+                                                                            class="btn btn-primary order-details ">Hủy
+                                                                            đơn
+                                                                        </button>
+                                                                        <button class="btn btn-primary order-details "
+                                                                            data-toggle="modal"
+                                                                            data-target="#login_itech">Chỉnh sửa
+                                                                            đơn</button>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-xl-6 col-12">
+                                                                <div class="modal animated fadeIn edit-order-details"
+                                                                    id="login_itech" tabindex="-1" role="dialog"
+                                                                    aria-hidden="true">
+                                                                    <div class="modal-dialog position-edit-order-deatils"
+                                                                        role="document">
+                                                                        <div class="modal-content ">
+                                                                            <div
+                                                                                class="modal-header edit-order-details">
+                                                                                <h5
+                                                                                    class="modal-title edit-order-details">
+                                                                                    Chỉnh
+                                                                                    sửa đơn
+                                                                                    hàng
+                                                                                </h5>
+                                                                                <button type="button"
+                                                                                    class="close edit-details"
+                                                                                    data-dismiss="modal"
+                                                                                    aria-label="Close">
+                                                                                    <span aria-hidden="true"
+                                                                                        class="text-center">&times;</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                                <div class="form-group">
+                                                                                    <label for="exampleInputEmail1">Số
+                                                                                        lượng</label>
+                                                                                    <input type="text"
+                                                                                        class="form-control">
+                                                                                </div>
+                                                                                <div class=" form-group">
+                                                                                    <label for="">Địa chỉ nhận
+                                                                                        hàng</label>
+                                                                                    <textarea
+                                                                                        class="form-control edit-details"></textarea>
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="text-center pb-2"
+                                                                                id="loader_itech">
+                                                                                <button type="button"
+                                                                                    class="btn btn-primary order-details">XÁC
+                                                                                    NHẬN</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="status-check-header" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+
+                                                            <div
+                                                                class="container d-flex justify-content-center position-status-order-deatils">
+
+                                                                <div class="card status-check order-details">
+                                                                    <div class="close-btn status-check ">
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <div class="container px-5">
+                                                                        <div
+                                                                            class="row d-flex justify-content-evenly px-3 header-status-check deatil">
+                                                                            <div class="col-md-6 d-flex">
+                                                                                <h5>Đơn <span
+                                                                                        class="text-primary font-weight-bold">#Y34XDHR</span>
+                                                                                </h5>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-md-6 d-flex flex-column text-sm-right code-order-details">
+                                                                                <p class="mb-0">Ngày đặt
+                                                                                    <span>01/12/22</span>
+                                                                                </p>
+                                                                                <p>Mã đơn hàng <span
+                                                                                        class="font-weight-bold">234094567242423422898</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <!-- Add class 'active' to progress -->
+                                                                    <div class="row d-flex justify-content-center">
+                                                                        <div class="col-12">
+                                                                            <ul id="progressbar" class="text-center">
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="step0"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="row justify-content-between d-flex header-status-check">
+                                                                        <div
+                                                                            class="col-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-ban"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Hủy <br> đơn
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-check-to-slot"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Xác <br>
+                                                                                    Nhận</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-truck-fast"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đang <br>
+                                                                                    vận chuyển
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-sharp fa-solid fa-house"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đã <br> giao
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-12">
+                                                    <div class="card-product-ordered pt-4">
+                                                        <div class="card-product order-details">
+                                                            <nav class="status-check">
+
+                                                                <div class="status-tittle order-details">
+                                                                    <button class="fake-btn-status-check"
+                                                                        data-toggle="modal"
+                                                                        data-target="#status-check-header">Chờ xác nhận
+                                                                    </button>
+                                                                </div>
+                                                            </nav>
+                                                            <div class="row">
+                                                                <div class="col-3">
+                                                                    <div class="order-item-img">
+                                                                        <img
+                                                                            src="./img/blog/product_1.jpg">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-9">
+                                                                    <div class="description order-details">
+                                                                        <div class="contet-product-order">
+                                                                            <h2>Tên sản phẩm</h2>
+                                                                            <div class="qty-and-price">
+                                                                                <h2>số lượng</h2>
+                                                                                <h1>giá tiền</h1>
+                                                                            </div>
+
+                                                                            <div class="total-product order-detail">
+                                                                                <span class="tittle">TỔNG</span>
+                                                                                <span class="price-total">100.00đ</span>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <div class="btn-product-detail pt-4">
+                                                                        <button
+                                                                            class="btn btn-primary order-details ">Hủy
+                                                                            đơn
+                                                                        </button>
+                                                                        <button class="btn btn-primary order-details "
+                                                                            data-toggle="modal"
+                                                                            data-target="#login_itech">Chỉnh sửa
+                                                                            đơn</button>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="login_itech" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog position-edit-order-deatils"
+                                                                role="document">
+                                                                <div class="modal-content ">
+                                                                    <div class="modal-header edit-order-details">
+                                                                        <h5 class="modal-title edit-order-details">Chỉnh
+                                                                            sửa đơn
+                                                                            hàng
+                                                                        </h5>
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Số
+                                                                                lượng</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                        <div class=" form-group">
+                                                                            <label for="">Địa chỉ nhận
+                                                                                hàng</label>
+                                                                            <textarea
+                                                                                class="form-control edit-details"></textarea>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="text-center pb-2" id="loader_itech">
+                                                                        <button type="button"
+                                                                            class="btn btn-primary order-details">XÁC
+                                                                            NHẬN</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="status-check-header" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+
+                                                            <div
+                                                                class="container d-flex justify-content-center position-status-order-deatils">
+
+                                                                <div class="card status-check order-details">
+                                                                    <div class="close-btn status-check ">
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <div class="container px-5">
+                                                                        <div
+                                                                            class="row d-flex justify-content-evenly px-3 header-status-check">
+                                                                            <div class="col-xl-6 d-flex">
+                                                                                <h5>Đơn <span
+                                                                                        class="text-primary font-weight-bold">#Y34XDHR</span>
+                                                                                </h5>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xl-6 d-flex flex-column text-sm-right">
+                                                                                <p class="mb-0">Ngày đặt
+                                                                                    <span>01/12/22</span>
+                                                                                </p>
+                                                                                <p>Mã đơn hàng <span
+                                                                                        class="font-weight-bold">234094567242423422898</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <!-- Add class 'active' to progress -->
+                                                                    <div class="row d-flex justify-content-center">
+                                                                        <div class="col-12">
+                                                                            <ul id="progressbar" class="text-center">
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="step0"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="row justify-content-between d-flex header-status-check">
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-ban"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Hủy <br> đơn
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-check-to-slot"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Xác <br>
+                                                                                    Nhận</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-truck-fast"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đang <br>
+                                                                                    vận chuyển
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-sharp fa-solid fa-house"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đã <br> giao
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-12">
+                                                    <div class="card-product-ordered pt-4">
+                                                        <div class="card-product order-details">
+                                                            <nav class="status-check">
+
+                                                                <div class="status-tittle order-details">
+                                                                    <button class="fake-btn-status-check"
+                                                                        data-toggle="modal"
+                                                                        data-target="#status-check-header">Chờ xác nhận
+                                                                    </button>
+                                                                </div>
+                                                            </nav>
+                                                            <div class="row">
+                                                                <div class="col-3">
+                                                                    <div class="order-item-img">
+                                                                        <img
+                                                                            src="./img/blog/product_1.jpg">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-9">
+                                                                    <div class="description order-details">
+                                                                        <div class="contet-product-order">
+                                                                            <h2>Tên sản phẩm</h2>
+                                                                            <div class="qty-and-price">
+                                                                                <h2>số lượng</h2>
+                                                                                <h1>giá tiền</h1>
+                                                                            </div>
+
+                                                                            <div class="total-product order-detail">
+                                                                                <span class="tittle">TỔNG</span>
+                                                                                <span class="price-total">100.00đ</span>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <div class="btn-product-detail pt-4">
+                                                                        <button
+                                                                            class="btn btn-primary order-details ">Hủy
+                                                                            đơn
+                                                                        </button>
+                                                                        <button class="btn btn-primary order-details "
+                                                                            data-toggle="modal"
+                                                                            data-target="#login_itech">Chỉnh sửa
+                                                                            đơn</button>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="login_itech" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog position-edit-order-deatils"
+                                                                role="document">
+                                                                <div class="modal-content ">
+                                                                    <div class="modal-header edit-order-details">
+                                                                        <h5 class="modal-title edit-order-details">Chỉnh
+                                                                            sửa đơn
+                                                                            hàng
+                                                                        </h5>
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Số
+                                                                                lượng</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                        <div class=" form-group">
+                                                                            <label for="">Địa chỉ nhận
+                                                                                hàng</label>
+                                                                            <textarea
+                                                                                class="form-control edit-details"></textarea>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="text-center pb-2" id="loader_itech">
+                                                                        <button type="button"
+                                                                            class="btn btn-primary order-details">XÁC
+                                                                            NHẬN</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="status-check-header" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+
+                                                            <div
+                                                                class="container d-flex justify-content-center position-status-order-deatils">
+
+                                                                <div class="card status-check order-details">
+                                                                    <div class="close-btn status-check ">
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <div class="container px-5">
+                                                                        <div
+                                                                            class="row d-flex justify-content-evenly px-3 header-status-check">
+                                                                            <div class="col-xl-6 d-flex">
+                                                                                <h5>Đơn <span
+                                                                                        class="text-primary font-weight-bold">#Y34XDHR</span>
+                                                                                </h5>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xl-6 d-flex flex-column text-sm-right">
+                                                                                <p class="mb-0">Ngày đặt
+                                                                                    <span>01/12/22</span>
+                                                                                </p>
+                                                                                <p>Mã đơn hàng <span
+                                                                                        class="font-weight-bold">234094567242423422898</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <!-- Add class 'active' to progress -->
+                                                                    <div class="row d-flex justify-content-center">
+                                                                        <div class="col-12">
+                                                                            <ul id="progressbar" class="text-center">
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="step0"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="row justify-content-between d-flex header-status-check">
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-ban"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Hủy <br> đơn
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-check-to-slot"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Xác <br>
+                                                                                    Nhận</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-truck-fast"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đang <br>
+                                                                                    vận chuyển
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-sharp fa-solid fa-house"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đã <br> giao
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div role="tabpanel" class="tab-pane needed" id="confirmed">
+
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <div class="card-product-ordered pt-4">
+                                                        <div class="card-product order-details">
+                                                            <nav class="status-check">
+
+                                                                <div class="status-tittle order-details">
+                                                                    <button class="fake-btn-status-check"
+                                                                        data-toggle="modal"
+                                                                        data-target="#status-check-header--checked">Đã
+                                                                        xác nhận
+                                                                    </button>
+                                                                </div>
+                                                            </nav>
+                                                            <div class="row">
+                                                                <div class="col-3">
+                                                                    <div class="order-item-img">
+                                                                        <img
+                                                                            src="./img/blog/product_1.jpg">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-9">
+                                                                    <div class="description order-details">
+                                                                        <div class="contet-product-order">
+                                                                            <h2>Tên sản phẩm</h2>
+                                                                            <div class="qty-and-price">
+                                                                                <h2>số lượng</h2>
+                                                                                <h1>giá tiền</h1>
+                                                                            </div>
+
+                                                                            <div class="total-product order-detail">
+                                                                                <span class="tittle">TỔNG</span>
+                                                                                <span class="price-total">100.00đ</span>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <div class="btn-product-detail pt-4">
+                                                                        <button
+                                                                            class="btn btn-primary order-details disabled">Hủy
+                                                                            đơn
+                                                                        </button>
+                                                                        <button
+                                                                            class="btn btn-primary order-details disabled"
+                                                                            data-toggle="modal"
+                                                                            data-target="#login_itech">Chỉnh sửa
+                                                                            đơn</button>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="login_itech" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog position-edit-order-deatils"
+                                                                role="document">
+                                                                <div class="modal-content ">
+                                                                    <div class="modal-header edit-order-details">
+                                                                        <h5 class="modal-title edit-order-details">Chỉnh
+                                                                            sửa đơn
+                                                                            hàng
+                                                                        </h5>
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Số
+                                                                                lượng</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                        <div class=" form-group">
+                                                                            <label for="">Địa chỉ nhận
+                                                                                hàng</label>
+                                                                            <textarea
+                                                                                class="form-control edit-details"></textarea>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="text-center pb-2" id="loader_itech">
+                                                                        <button type="button"
+                                                                            class="btn btn-primary order-details">XÁC
+                                                                            NHẬN</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="status-check-header--checked" tabindex="-1"
+                                                            role="dialog" aria-hidden="true">
+
+                                                            <div
+                                                                class="container d-flex justify-content-center position-status-order-deatils">
+
+                                                                <div class="card status-check order-details">
+                                                                    <div class="close-btn status-check ">
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <div class="container px-5">
+                                                                        <div
+                                                                            class="row d-flex justify-content-evenly px-3 header-status-check">
+                                                                            <div class="col-xl-6 d-flex">
+                                                                                <h5>Đơn <span
+                                                                                        class="text-primary font-weight-bold">#Y34XDHR</span>
+                                                                                </h5>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xl-6 d-flex flex-column text-sm-right">
+                                                                                <p class="mb-0">Ngày đặt
+                                                                                    <span>01/12/22</span>
+                                                                                </p>
+                                                                                <p>Mã đơn hàng <span
+                                                                                        class="font-weight-bold">234094567242423422898</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <!-- Add class 'active' to progress -->
+                                                                    <div class="row d-flex justify-content-center">
+                                                                        <div class="col-12">
+                                                                            <ul id="progressbar" class="text-center">
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class=" step0"></li>
+                                                                                <li class="step0"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="row justify-content-between d-flex header-status-check">
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-ban"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Hủy <br> đơn
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-check-to-slot"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Xác <br>
+                                                                                    Nhận</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-truck-fast"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đang <br>
+                                                                                    vận chuyển
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-sharp fa-solid fa-house"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đã <br> giao
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div role="tabpanel" class="tab-pane" id="shipping">
+
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <div class="card-product-ordered pt-4">
+                                                        <div class="card-product order-details">
+                                                            <nav class="status-check">
+
+                                                                <div class="status-tittle order-details">
+                                                                    <button class="fake-btn-status-check"
+                                                                        data-toggle="modal"
+                                                                        data-target="#status-check-header--shipping">Đang
+                                                                        vận chuyển
+                                                                    </button>
+                                                                </div>
+                                                            </nav>
+                                                            <div class="row">
+                                                                <div class="col-3">
+                                                                    <div class="order-item-img">
+                                                                        <img
+                                                                            src="./img/blog/product_1.jpg">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-9">
+                                                                    <div class="description order-details">
+                                                                        <div class="contet-product-order">
+                                                                            <h2>Tên sản phẩm</h2>
+                                                                            <div class="qty-and-price">
+                                                                                <h2>số lượng</h2>
+                                                                                <h1>giá tiền</h1>
+                                                                            </div>
+
+                                                                            <div class="total-product order-detail">
+                                                                                <span class="tittle">TỔNG</span>
+                                                                                <span class="price-total">100.00đ</span>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <div class="btn-product-detail pt-4">
+                                                                        <button
+                                                                            class="btn btn-primary order-details disabled">Hủy
+                                                                            đơn
+                                                                        </button>
+                                                                        <button
+                                                                            class="btn btn-primary order-details disabled"
+                                                                            data-toggle="modal"
+                                                                            data-target="#login_itech">Chỉnh sửa
+                                                                            đơn</button>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="login_itech" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog position-edit-order-deatils"
+                                                                role="document">
+                                                                <div class="modal-content ">
+                                                                    <div class="modal-header edit-order-details">
+                                                                        <h5 class="modal-title edit-order-details">Chỉnh
+                                                                            sửa đơn
+                                                                            hàng
+                                                                        </h5>
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Số
+                                                                                lượng</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                        <div class=" form-group">
+                                                                            <label for="">Địa chỉ nhận
+                                                                                hàng</label>
+                                                                            <textarea
+                                                                                class="form-control edit-details"></textarea>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="text-center pb-2" id="loader_itech">
+                                                                        <button type="button"
+                                                                            class="btn btn-primary order-details">XÁC
+                                                                            NHẬN</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="status-check-header--shipping" tabindex="-1"
+                                                            role="dialog" aria-hidden="true">
+
+                                                            <div
+                                                                class="container d-flex justify-content-center position-status-order-deatils">
+
+                                                                <div class="card status-check order-details">
+                                                                    <div class="close-btn status-check ">
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <div class="container px-5">
+                                                                        <div
+                                                                            class="row d-flex justify-content-evenly px-3 header-status-check">
+                                                                            <div class="col-xl-6 d-flex">
+                                                                                <h5>Đơn <span
+                                                                                        class="text-primary font-weight-bold">#Y34XDHR</span>
+                                                                                </h5>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xl-6 d-flex flex-column text-sm-right">
+                                                                                <p class="mb-0">Ngày đặt
+                                                                                    <span>01/12/22</span>
+                                                                                </p>
+                                                                                <p>Mã đơn hàng <span
+                                                                                        class="font-weight-bold">234094567242423422898</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <!-- Add class 'active' to progress -->
+                                                                    <div class="row d-flex justify-content-center">
+                                                                        <div class="col-12">
+                                                                            <ul id="progressbar" class="text-center">
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="step0"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="row justify-content-between d-flex header-status-check">
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-ban"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Hủy <br> đơn
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-check-to-slot"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Xác <br>
+                                                                                    Nhận</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-truck-fast"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đang <br>
+                                                                                    vận chuyển
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-sharp fa-solid fa-house"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đã <br> giao
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div role="tabpanel" class="tab-pane" id="shipped">
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <div class="card-product-ordered pt-4">
+                                                        <div class="card-product order-details">
+                                                            <nav class="status-check">
+
+                                                                <div class="status-tittle order-details">
+                                                                    <button class="fake-btn-status-check"
+                                                                        data-toggle="modal"
+                                                                        data-target="#status-check-header--shipped">Đang
+                                                                        giao
+                                                                    </button>
+                                                                </div>
+                                                            </nav>
+                                                            <div class="row">
+                                                                <div class="col-3">
+                                                                    <div class="order-item-img">
+                                                                        <img
+                                                                            src="./img/blog/product_1.jpg">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-9">
+                                                                    <div class="description order-details">
+                                                                        <div class="contet-product-order">
+                                                                            <h2>Tên sản phẩm</h2>
+                                                                            <div class="qty-and-price">
+                                                                                <h2>số lượng</h2>
+                                                                                <h1>giá tiền</h1>
+                                                                            </div>
+
+                                                                            <div class="total-product order-detail">
+                                                                                <span class="tittle">TỔNG</span>
+                                                                                <span class="price-total">100.00đ</span>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <div class="btn-product-detail pt-4">
+                                                                        <button
+                                                                            class="btn btn-primary order-details disabled">Hủy
+                                                                            đơn
+                                                                        </button>
+                                                                        <button
+                                                                            class="btn btn-primary order-details disabled"
+                                                                            data-toggle="modal"
+                                                                            data-target="#login_itech">Chỉnh sửa
+                                                                            đơn</button>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="login_itech" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog position-edit-order-deatils"
+                                                                role="document">
+                                                                <div class="modal-content ">
+                                                                    <div class="modal-header edit-order-details">
+                                                                        <h5 class="modal-title edit-order-details">Chỉnh
+                                                                            sửa đơn
+                                                                            hàng
+                                                                        </h5>
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Số
+                                                                                lượng</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                        <div class=" form-group">
+                                                                            <label for="">Địa chỉ nhận
+                                                                                hàng</label>
+                                                                            <textarea
+                                                                                class="form-control edit-details"></textarea>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="text-center pb-2" id="loader_itech">
+                                                                        <button type="button"
+                                                                            class="btn btn-primary order-details">XÁC
+                                                                            NHẬN</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="status-check-header--shipped" tabindex="-1"
+                                                            role="dialog" aria-hidden="true">
+
+                                                            <div
+                                                                class="container d-flex justify-content-center position-status-order-deatils">
+
+                                                                <div class="card status-check order-details">
+                                                                    <div class="close-btn status-check ">
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <div class="container px-5">
+                                                                        <div
+                                                                            class="row d-flex justify-content-evenly px-3 header-status-check">
+                                                                            <div class="col-xl-6 d-flex">
+                                                                                <h5>Đơn <span
+                                                                                        class="text-primary font-weight-bold">#Y34XDHR</span>
+                                                                                </h5>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xl-6 d-flex flex-column text-sm-right">
+                                                                                <p class="mb-0">Ngày đặt
+                                                                                    <span>01/12/22</span>
+                                                                                </p>
+                                                                                <p>Mã đơn hàng <span
+                                                                                        class="font-weight-bold">234094567242423422898</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <!-- Add class 'active' to progress -->
+                                                                    <div class="row d-flex justify-content-center">
+                                                                        <div class="col-12">
+                                                                            <ul id="progressbar" class="text-center">
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                                <li class="active step0"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="row justify-content-between d-flex header-status-check">
+                                                                        <div
+                                                                            class="col-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-ban"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Hủy <br> đơn
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="col-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-check-to-slot"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Xác <br>
+                                                                                    Nhận</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-truck-fast"></i>
+                                                                            <div class=" text-icon d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đang <br>
+                                                                                    vận chuyển
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-sharp fa-solid fa-house"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đã <br> giao
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div role="tabpanel" class="tab-pane" id="cancel">
+                                            <div class="row">
+                                                <div class="col-xl-12">
+                                                    <div class="card-product-ordered pt-4">
+                                                        <div class="card-product order-details">
+                                                            <nav class="status-check">
+
+                                                                <div class="status-tittle order-details">
+                                                                    <button class="fake-btn-status-check"
+                                                                        data-toggle="modal"
+                                                                        data-target="#status-check-header--cancel">Đã
+                                                                        hủy
+                                                                    </button>
+                                                                </div>
+                                                            </nav>
+                                                            <div class="row">
+                                                                <div class="col-3">
+                                                                    <div class="order-item-img">
+                                                                        <img
+                                                                            src="./img/blog/product_1.jpg">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-9">
+                                                                    <div class="description order-details">
+                                                                        <div class="contet-product-order">
+                                                                            <h2>Tên sản phẩm</h2>
+                                                                            <div class="qty-and-price">
+                                                                                <h2>số lượng</h2>
+                                                                                <h1>giá tiền</h1>
+                                                                            </div>
+
+                                                                            <div class="total-product order-detail">
+                                                                                <span class="tittle">TỔNG</span>
+                                                                                <span class="price-total">100.00đ</span>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="col-12">
+                                                                    <div class="btn-product-detail pt-4">
+                                                                        <button
+                                                                            class="btn btn-primary order-details disabled">Hủy
+                                                                            đơn
+                                                                        </button>
+                                                                        <button
+                                                                            class="btn btn-primary order-details disabled"
+                                                                            data-toggle="modal"
+                                                                            data-target="#login_itech">Chỉnh sửa
+                                                                            đơn</button>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="login_itech" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog position-edit-order-deatils"
+                                                                role="document">
+                                                                <div class="modal-content ">
+                                                                    <div class="modal-header edit-order-details">
+                                                                        <h5 class="modal-title edit-order-details">Chỉnh
+                                                                            sửa đơn
+                                                                            hàng
+                                                                        </h5>
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label for="exampleInputEmail1">Số
+                                                                                lượng</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                        <div class=" form-group">
+                                                                            <label for="">Địa chỉ nhận
+                                                                                hàng</label>
+                                                                            <textarea
+                                                                                class="form-control edit-details"></textarea>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="text-center pb-2" id="loader_itech">
+                                                                        <button type="button"
+                                                                            class="btn btn-primary order-details">XÁC
+                                                                            NHẬN</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal animated fadeIn edit-order-details"
+                                                            id="status-check-header--cancel" tabindex="-1" role="dialog"
+                                                            aria-hidden="true">
+
+                                                            <div
+                                                                class="container d-flex justify-content-center position-status-order-deatils">
+
+                                                                <div class="card status-check order-details">
+                                                                    <div class="close-btn status-check ">
+                                                                        <button type="button" class="close edit-details"
+                                                                            data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true"
+                                                                                class="text-center">&times;</span>
+                                                                        </button>
+                                                                    </div>
+
+                                                                    <div class="container px-5">
+                                                                        <div
+                                                                            class="row d-flex justify-content-evenly px-3 header-status-check">
+                                                                            <div class="col-xl-6 d-flex">
+                                                                                <h5>Đơn <span
+                                                                                        class="text-primary font-weight-bold">#Y34XDHR</span>
+                                                                                </h5>
+                                                                            </div>
+                                                                            <div
+                                                                                class="col-xl-6 d-flex flex-column text-sm-right">
+                                                                                <p class="mb-0">Ngày đặt
+                                                                                    <span>01/12/22</span>
+                                                                                </p>
+                                                                                <p>Mã đơn hàng <span
+                                                                                        class="font-weight-bold">234094567242423422898</span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <!-- Add class 'active' to progress -->
+                                                                    <div class="row d-flex justify-content-center">
+                                                                        <div class="col-12">
+                                                                            <ul id="progressbar" class="text-center">
+                                                                                <li class=" step0"></li>
+                                                                                <li class=" step0"></li>
+                                                                                <li class=" step0"></li>
+                                                                                <li class="step0"></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="row justify-content-between d-flex header-status-check">
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-ban"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Hủy <br> đơn
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-check-to-slot"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Xác <br>
+                                                                                    Nhận</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-solid fa-truck-fast"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đang <br>
+                                                                                    vận chuyển
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-xl-3 d-flex icon-content status-check">
+                                                                            <i
+                                                                                class="icon status-check fa-sharp fa-solid fa-house"></i>
+                                                                            <div class="d-flex flex-column">
+                                                                                <p class="font-weight-bold">Đã <br> giao
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="notification" role="tabpanel"
+                                aria-labelledby="notification-tab">
+                                <div class="mdc-tab-bar" role="tablist">
+                                    <div class="mdc-tab-scroller">
+                                        <div class="mdc-tab-scroller__scroll-area">
+                                            <div class="mdc-tab-scroller__scroll-content">
+                                                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true"
+                                                    tabindex="0">
+                                                    <span class="mdc-tab__content">
+                                                        <!-- <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+                                                  <span class="mdc-tab__text-label">Favorites</span> -->
+                                                    </span>
+                                                    <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                                        <span
+                                                            class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                                                    </span>
+                                                    <span class="mdc-tab__ripple"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- </div> -->
+    </section>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section set-bg" data-setbg="img/hero/slider-bg-1.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-option">
+                        <ul>
+                            <li> <span>Website</span></li>
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./service.html">Dịch vụ</a></li>
+                            <li><a href="./productlist.html">Sản phẩm</a></li>
+                            <li><a href="">Hướng dẫn</a></li>
+                            <li><a href="./contact.html">Liên hệ</a></li>
+                            <li><a href="./about-us.html">Về chúng tôi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-option">
+                        <ul>
+                            <li> <span>Sản phẩm</span></li>
+                            <li><a href="">Thực phẩm chức năng</a></li>
+                            <li><a href="">Sản phẩm bảo hộ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-option">
+                        <ul>
+                            <li> <span>Tham gia</span></li>
+                            <li><a href="">hướng dẫn đăng ký</a></li>
+                            <li><a href="">Đăng ký</a></li>
+                            <li><a href="">Đăng nhập</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-option">
+                <div class="so-text">
+                    <h4>ĐĂNG KÍ NHẬN THÔNG TIN MỚI NHẤT</h4>
+                    <p>Đăng ký để nhập những thông tin mới từ chúng tôi</p>
+                </div>
+                <form action="#" class="subscribe-form">
+                    <input type="text" placeholder="Nhập email">
+                    <button type="submit"><i class="fa fa-send"></i></button>
+                </form>
+            </div>
+            <div class="copyright-text">
+                <ul>
+                    <li><a href="#">Điều khoản</a></li>
+                    <li><a href="#">Chính sách</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
