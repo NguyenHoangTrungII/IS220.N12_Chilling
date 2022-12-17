@@ -10,7 +10,6 @@
 
   <meta name="description" content="" />
 
-  <!-- Favicon -->
 
   <!-- Fonts -->
 
@@ -118,9 +117,11 @@
             </ul>
           </li>
 
+
           <!-- Manament -->
           <li class="menu-header small text-uppercase"><span class="menu-header-text">Quản lý</span></li>
-          <li class="menu-item active">
+          <!-- Cards -->
+          <li class="menu-item">
             <a href="list_customer.html" class="menu-link">
               <i class="menu-icon tf-icons bx bx-box"></i>
               <div data-i18n="">Quản lý khách hàng</div>
@@ -132,7 +133,7 @@
               <div data-i18n="">Quản lý sản phẩm</div>
             </a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item active">
             <a href="list_discount.html" class="menu-link">
               <i class="menu-icon tf-icons bx bx-box"></i>
               <div data-i18n="">Quản lý mã giảm giá</div>
@@ -251,29 +252,24 @@
           <!-- Content -->
 
           <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"> Khách hàng</h4>
+            <h4 class="fw-bold py-3 mb-4">Mã giảm giá</h4>
 
             <hr class="my-5" />
 
             <!-- Bootstrap Table with Header - Footer -->
             <div class="card">
               <div class="card-header header table-user">
-                <h5 class=" card-header">Thông tin khách hàng</h5>
-                <a href="add_customer.html"><button class="btn btn-primary add-btn user" type="button">THÊM</button></a>
+                <h5 class=" card-header">Danh sách sản phẩm</h5>
+                <a href="add_discount.html"><button class="btn btn-primary add-btn user" type="button">THÊM</button></a>
               </div>
               <div class="table-responsive text-nowrap">
                 <table class="table user">
                   <thead>
                     <tr>
-                      <th class="id-header user">Mã</th>
-                      <th class="name user">Họ tên</th>
-                      <th class="img user">Ảnh</th>
-                      <th class="birthday user">Ngày sinh</th>
-                      <th class="email user">Email</th>
-                      <th class="phone user">Số điện thoại</th>
-                      <th class="phone user">Loại khách hàng</th>
-                      <th class="birthday user">Ngày hết hạn</th>
-                      <th class="action user">Thao tác</th>
+                      <th class="id-header discount">ID</th>
+                      <th class="companny product">Mã giảm giá</th>
+                      <th class="img product">Chiết khấu</th>
+                      <th class="action product">Thao tác</th>
 
                     </tr>
                   </thead>
@@ -281,28 +277,10 @@
                     <tr>
                       <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>1</strong></td>
                       <td>
-                        Nguyễn Văn A
+                        KM01
                       </td>
                       <td>
-                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                          <li>
-                            <img src="../assets/img/avatars/1.png" alt="Anh dai dien" class="photo-user">
-
-                          </li>
-                        </ul>
-                      </td>
-                      <td>
-                        <span>1/1/2022</span>
-                      </td>
-                      <td>
-                        diachimail@gmail.com
-                      </td>
-                      <td>0123456789</td>
-                      <td>
-                        Thân thiết
-                      </td>
-                      <td>
-                        01/06/2023
+                        5
                       </td>
                       <td>
                         <div class="dropdown">
@@ -310,42 +288,42 @@
                             <i class="bx bx-dots-vertical-rounded"></i>
                           </button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalLong"><i
-                                class="bx bx-info-circle"></i> Xem thông tin chi tiết</a>
-
-                            <a class="dropdown-item" href="edit_customer.html"><i class="bx bx-edit-alt me-1"></i>
+                            <a class="dropdown-item" href="edit_discount.html"><i class="bx bx-edit-alt me-1"></i>
                               Sửa</a>
                             <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Xóa</a>
                           </div>
+                        </div>
+                      </td>
+                    </tr>
 
+                    <tr>
+                      <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>1</strong></td>
+                      <td>
+                        KM01
+                      </td>
+                      <td>
+                        5
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="edit_discount.html"><i class="bx bx-edit-alt me-1"></i>
+                              Sửa</a>
+                            <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Xóa</a>
+                          </div>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>1</strong></td>
                       <td>
-                        Nguyễn Văn A
+                        KM01
                       </td>
                       <td>
-                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                          <li>
-                            <img src="../assets/img/avatars/1.png" alt="Anh dai dien" class="photo-user">
-
-                          </li>
-                        </ul>
-                      </td>
-                      <td>
-                        <span>1/1/2022</span>
-                      </td>
-                      <td>
-                        diachimail@gmail.com
-                      </td>
-                      <td>0123456789</td>
-                      <td>
-                        Thân thiết
-                      </td>
-                      <td>
-                        01/06/2023
+                        5
                       </td>
                       <td>
                         <div class="dropdown">
@@ -353,53 +331,7 @@
                             <i class="bx bx-dots-vertical-rounded"></i>
                           </button>
                           <div class="dropdown-menu">
-                            <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalLong"><i
-                                class="bx bx-info-circle"></i> Xem thông tin chi tiết</a>
-
-                            <a class="dropdown-item" href="edit_customer.html"><i class="bx bx-edit-alt me-1"></i>
-                              Sửa</a>
-                            <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Xóa</a>
-                          </div>
-                        </div>
-                      </td>
-
-                    </tr>
-                    <tr>
-                      <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>1</strong></td>
-                      <td>
-                        Nguyễn Văn A
-                      </td>
-                      <td>
-                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                          <li>
-                            <img src="../assets/img/avatars/1.png" alt="Anh dai dien" class="photo-user">
-
-                          </li>
-                        </ul>
-                      </td>
-                      <td>
-                        <span>1/1/2022</span>
-                      </td>
-                      <td>
-                        diachimail@gmail.com
-                      </td>
-                      <td>0123456789</td>
-                      <td>
-                        Thân thiết
-                      </td>
-                      <td>
-                        01/06/2023
-                      </td>
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class="bx bx-dots-vertical-rounded"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalLong"><i
-                                class="bx bx-info-circle"></i> Xem thông tin chi tiết</a>
-
-                            <a class="dropdown-item" href="edit_customer.html"><i class="bx bx-edit-alt me-1"></i>
+                            <a class="dropdown-item" href="edit_discount.html"><i class="bx bx-edit-alt me-1"></i>
                               Sửa</a>
                             <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Xóa</a>
                           </div>
@@ -407,30 +339,20 @@
                       </td>
                     </tr>
                   </tbody>
-
                   <tfoot class="table-border-bottom-0">
                     <tr>
-                      <th class="id-header user">Mã</th>
-                      <th class="name user">Họ tên</th>
-                      <th class="img user">Ảnh</th>
-                      <th class="birthday user">Ngày sinh</th>
-                      <th class="email user">Email</th>
-                      <th class="phone user">Số điện thoại</th>
-                      <th class="phone user">Loại khách hàng</th>
-                      <th class="birthday user">Ngày hết hạn</th>
-                      <th class="action user">Thao tác</th>
-
+                      <th class="id-header discount">ID</th>
+                      <th class="companny product">Mã giảm giá</th>
+                      <th class="img product">Chiết khấu</th>
+                      <th class="action product">Thao tác</th>
                     </tr>
                   </tfoot>
-
-
-
-
                   <div class="modal fade" id="modalLong" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="modalLongTitle">Thông tin chi tiết</h5>
+                          <h5 class="modal-title" id="modalLongTitle">Thông tin chi tiết
+                          </h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -438,136 +360,70 @@
                             <div class="col-xl">
                               <div class="card mb-4">
                                 <div class="card-header d-flex justify-content-between align-items-center">
-                                  <h5 class="mb-0">Thông tin <span>khách hàng</span></h5>
-                                  <small class="text-muted float-end">Thêm thông tin</small>
+                                  <h5 class="mb-0">Thông tin <span>khuyến mãi</span></h5>
+                                  <small class="text-muted float-end">Sửa thông tin</small>
                                 </div>
                                 <div class="card-body">
                                   <form>
                                     <div class="row">
-                                      <div class="mb-3 col-xl-6">
-                                        <label class="form-label" for="basic-default-fullname">Họ
-                                          tên</label>
+                                      <div class="mb-3 col-xl-12">
+                                        <label class="form-label" for="basic-default-fullname">Tên khuyến
+                                          mãi</label>
                                         <input type="text" class="form-control" id="basic-default-fullname"
-                                          placeholder="Nhập họ và tên" disabled>
-                                      </div>
-                                      <div class="mb-3 col-xl-6">
-                                        <label class="form-label">Ngày sinh</label>
-                                        <input class="form-control" type="date" value="Chọn ngày sinh" disabled>
+                                          placeholder="Nhập tên khuyến mãi" disabled>
                                       </div>
                                     </div>
-                                    <div class="row">
-                                      <div class="form-check col-xl-6">
-                                        <label class="form-label mb-3" for="basic-default-phone">Giới
-                                          tính</label>
-                                        <div class="row">
-                                          <div class="col-6">
-                                            <input name="Gender" class="Gender-cb form-check-input" type="radio"
-                                              value="1" id="Male" checked disabled>
-                                            <label class="form-check-label" for="defaultRadio2"> Nam </label>
-                                          </div>
-                                          <div class=" col-6">
-                                            <input name="Gender" class="Gender-cb form-check-input" type="radio"
-                                              value="0" id="Female" disabled>
-                                            <label class="form-check-label" for="defaultRadio1"> Nữ </label>
-                                          </div>
 
-                                        </div>
+                                    <div class="row">
+                                      <div class="col-xl-4">
+                                        <label class="form-label" for="basic-default-fullname">Mã khuyến
+                                          mãi</label>
+                                        <input type="text" class="form-control" id="basic-default-fullname"
+                                          placeholder="Nhập mã khuyến mãi" disabled>
+                                      </div>
+                                      <div class="col-xl-4">
+                                        <label class="form-label" for="basic-default-fullname">Loại khuyến mãi</label>
+                                        <select id="defaultSelect" class="form-select" disabled>
+                                          <option>Chọn loại khuyến mãi</option>
+                                          <option value="1">Miễn phí vận chuyển</option>
+                                          <option value="2">Giảm giá</option>
+                                        </select>
                                       </div>
 
-
-
-                                      <div class="col-xl-6">
+                                      <div class="col-xl-4">
                                         <div class="mb-3">
-                                          <label class="form-label" for="basic-default-phone">Số điện
-                                            thoại</label>
+                                          <label class="form-label" for="basic-default-phone">Đơn tối thiểu</label>
                                           <input type="text" id="basic-default-phone" class="form-control phone-mask"
-                                            placeholder="0123456789" disabled>
+                                            placeholder="0Đ" disabled>
                                         </div>
                                       </div>
-                                      <div class="col-xl-12">
-                                        <div class="mb-3">
-                                          <label class="form-label" for="basic-default-email">Email</label>
-                                          <div class="input-group input-group-merge">
-                                            <input type="text" id="basic-default-email" class="form-control"
-                                              placeholder="taikhoanmail" aria-label=""
-                                              aria-describedby="basic-default-email2" disabled>
-                                            <span class="input-group-text" id="basic-default-email2">@gmail.com </span>
-                                          </div>
-                                          <!-- <div class="form-text">You can use letters, numbers & periods</div> -->
-                                        </div>
-                                      </div>
-
                                     </div>
 
                                     <div class="row">
-                                      <div class="col-xl-4">
-                                        <div class="mb-3">
-                                          <label for="defaultSelect" class="form-label">Loại khách hàng</label>
-                                          <select id="defaultSelect" class="form-select" disabled>
-                                            <option>Chọn loại khách hàng</option>
-                                            <option value="1">Thân thiết</option>
-                                            <option value="2">VIP</option>
-                                            <option value="2">SuperVIP</option>
-                                          </select>
-                                        </div>
+                                      <div class="col-xl-5">
+                                        <label class="form-label" for="basic-default-fullname">Từ ngày</label>
+                                        <input class="form-control" type="date" value="" disabled>
+                                      </div>
+                                      <div class="col-xl-5">
+                                        <label class="form-label" for="basic-default-fullname">Đến ngày</label>
+                                        <input class="form-control" type="date" value="" disabled>
                                       </div>
 
-                                      <div class="col-xl-4">
-                                        <div class="mb-3">
-                                          <label class="form-label">Ngày đăng ký</label>
-                                          <input class="form-control" type="date" value="Ngày đăng ký" disabled>
-                                        </div>
-                                      </div>
-
-
-                                      <div class="col-xl-4">
-                                        <div class="mb-3">
-                                          <label class="form-label">Ngày hết hạn</label>
-                                          <input class="form-control" type="date" value="Chọn ngày hết hạn" disabled>
-                                        </div>
+                                      <div class="mb-3 col-xl-2 text-center">
+                                        <label class="form-label pb-2">Tình trạng</label><br>
+                                        <label class="toggle-switchy" for="example_textless_4" data-size="sm"
+                                          data-text="false" data-style="rounded">
+                                          <input checked type="checkbox" id="example_textless_4" disabled>
+                                          <span class="toggle">
+                                            <span class="switch"></span>
+                                          </span>
+                                        </label>
                                       </div>
                                     </div>
-                                    <div class="row">
-                                      <div class="mb-3 col-xl-3">
-                                        <label class="form-label" for="basic-default-fullname">Chiều cao</label>
-                                        <input type="number" class="form-control" id="basic-default-fullname"
-                                          placeholder="Nhập chiều cao" disabled>
-                                      </div>
-                                      <div class="mb-3 col-xl-3">
-                                        <label class="form-label" for="basic-default-fullname">Cân nặng</label>
-                                        <input type="number" class="form-control" id="basic-default-fullname"
-                                          placeholder="Nhập cân nặng" disabled>
-                                      </div>
-                                      <div class="mb-3 col-xl-6">
-                                        <label class="form-label" for="basic-default-message">Địa chỉ</label>
-                                        <textarea id="basic-default-message" class="form-control" placeholder="Địa chỉ"
-                                          disabled></textarea>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="mb-3 col-xl-6">
-                                        <label class="form-label" for="basic-default-fullname">Mật khẩu</label>
-                                        <input type="text" class="form-control" id="basic-default-fullname"
-                                          placeholder="Nhập mật khẩu" disabled>
-                                      </div>
-                                      <div class="mb-3 col-xl-6">
-                                        <label class="form-label" for="basic-default-fullname">Số tiền tích lũy</label>
-                                        <input type="text" class="form-control" id="basic-default-fullname"
-                                          placeholder="Nhập số tiền tích lũy" disabled>
-                                      </div>
-                                    </div>
-
                                     <div class="mb-3">
-                                      <label for="formFile" class="form-label ">Ảnh</label>
-
-                                    </div>
-
-                                    <div class="mb-5">
-                                      <div class="fileupload fileupload-new border-5" data-provides="fileupload">
-                                        <div class="fileupload-new thumbnail" style="width: 160px; height: 160px;">
-                                          <img src="../assets/img/avatars/1.png" alt="">
-                                        </div>
-                                      </div>
+                                      <label class="form-label" for="basic-default-message">Nội dung</label>
+                                      <textarea id="basic-default-message" class="form-control"
+                                        placeholder="Nhập nội dung mã khuyến mãi" disabled></textarea>
                                     </div>
                                   </form>
                                 </div>
