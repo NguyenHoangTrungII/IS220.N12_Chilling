@@ -38,12 +38,16 @@
     <!-- Header Section Begin -->
     <header class="header-section">
         <div class="container">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="" alt="">
-                </a>
+            <div class="col-3">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="nav-menu">
+
+            <!-- lưu ý thêm class nav-menu--nologin nếu chưa login -->
+            <div class="nav-menu ">
                 <nav class="mainmenu mobile-menu">
                     <ul>
                         <li class="active"><a href="./index.html">Trang chủ</a></li>
@@ -52,10 +56,262 @@
                         <li><a href="./productlist.html">Sản phẩm</a></li>
                         <li><a href="./contact.html">Liên hệ</a></li>
                         <li><a href="./about-us.html">Về chúng tôi</a></li>
+
+                        <!-- when login -->
+                        <li class="user-cart-login--mobile ">
+                            <div class="sinlge-bar shopping">
+                                <a href="#" class="single-icon"><i
+                                        class="header-mid-icon fa-solid fa-cart-shopping" style="
+                                        font-size: 20px;"></i> </a> <span>Giỏ hàng</span>
+            
+                                <div class="shopping-item">
+                                    <div class="dropdown-cart-header">
+                                        <!-- <span>2 sản phẩm</span> -->
+                                        <a href="#" style="padding: 0 0 0 0;">Xem giỏ hàng</a>
+                                    </div>
+                                    <ul class="shopping-list">
+                                        <li>
+                                            <div class="content-shopping-list-item">
+                                                <div class="remove-icon">
+                                                    <a href="#" class="remove" title="Xóa sản phẩm"><i
+                                                            class="fa fa-remove"></i></a>
+                                                </div>
+                                                <a class="cart-img" href="#"><img
+                                                        src="./img/about-pic.jpg" alt="#"></a>
+                                                <div class="cart-product-deatil">
+                                                    <h4><a href="#">Tên sản phẩm</a></h4>
+                                                    <p class="quantity">1x - <span class="amount">100.000đ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="content-shopping-list-item">
+                                                <div class="remove-icon">
+                                                    <a href="#" class="remove" title="Xóa sản phẩm"><i
+                                                            class="fa fa-remove"></i></a>
+                                                </div>
+                                                <a class="cart-img" href="#"><img
+                                                        src="./assets/img/homepage/product01.png" alt="#"></a>
+                                                <div class="cart-product-deatil">
+                                                    <h4><a href="#">Tên sản phẩm</a></h4>
+                                                    <p class="quantity">1x - <span class="amount">100.000đ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="bottom">
+                                        <div class="total">
+                                            <span>Tổng </span>
+                                            <span class="total-amount">235.000đ</span>
+                                        </div>
+                                        <a href="" class="btn animate">Thanh toán</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="user-section-login--mobile" >
+                            <div class="user-header">
+                                <span class ="user-name">Tên người đăng nhập</span>
+                                <a><i class=" user-icon-header fa-regular fa-user"></i></a>
+            
+                                <div class="user-item">
+                                    <div class="dropdown-user-header">
+                                    </div>
+                                    <ul class="user-list">
+                                        <li>
+                                            <a href="">
+                                                <span>Tài khoản của tôi</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                
+                                                <span>Đơn mua của tôi</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                
+                                                <span>Đổi mật khẩu</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>Thông tin cá nhân</span></a>
+                                        </li>
+            
+                                    </ul>
+                                    <div class="bottom">
+                                        <a href="" class="btn animate">Đăng xuất</a>
+                                        <a href="" class="btn animate">Đăng nhập</a>
+            
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        
                     </ul>
+
+                    <!-- when user no login -->
+
+                    <!-- <a href="#" class="primary-btn signup-btn">Đăng nhập</a> -->
                 </nav>
-                <a href="#" class="primary-btn signup-btn">Đăng nhập</a>
-                <a href="./cart.html" class="primary-btn signup-btn">Giỏ hàng</a>
+
+
+
+                <!-- When user no login -->
+                <!-- <div class="user-header">
+                    <span class ="user-name">Tên người đăng nhập</span>
+                    <a><i class=" user-icon-header fa-regular fa-user"></i></a>
+
+                    <div class="user-item">
+                        <div class="dropdown-user-header">
+                        </div>
+                        <ul class="user-list">
+                            <li>
+                                <a href=""><i class="fa-solid fa-gear"></i>
+                                    <span>Tài khoản của tôi</span></a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <span>Đơn mua của tôi</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <span>Đổi mật khẩu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-circle-info"></i>
+                                    <span>Thông tin cá nhân</span></a>
+                            </li>
+
+                        </ul>
+                        <div class="bottom">
+                            <a href="" class="btn animate">Đăng xuất</a>
+                            <a href="" class="btn animate">Đăng nhập</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sinlge-bar shopping">
+                    <a href="#" class="single-icon"><i
+                            class="header-mid-icon fa-solid fa-cart-shopping"></i> <span
+                            class="total-count">2</span></a>
+
+                    <div class="shopping-item">
+                        <div class="dropdown-cart-header">
+                            <span>2 sản phẩm</span>
+                            <a href="#">Xem giỏ hàng</a>
+                        </div>
+                        <ul class="shopping-list">
+                            <li>
+                                <div class="content-shopping-list-item">
+                                    <div class="remove-icon">
+                                        <a href="#" class="remove" title="Xóa sản phẩm"><i
+                                                class="fa fa-remove"></i></a>
+                                    </div>
+                                    <a class="cart-img" href="#"><img
+                                            src="./assets/img/homepage/product01.png" alt="#"></a>
+                                    <div class="cart-product-deatil">
+                                        <h4><a href="#">Tên sản phẩm</a></h4>
+                                        <p class="quantity">1x - <span class="amount">100.000đ</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content-shopping-list-item">
+                                    <div class="remove-icon">
+                                        <a href="#" class="remove" title="Xóa sản phẩm"><i
+                                                class="fa fa-remove"></i></a>
+                                    </div>
+                                    <a class="cart-img" href="#"><img
+                                            src="./assets/img/homepage/product01.png" alt="#"></a>
+                                    <div class="cart-product-deatil">
+                                        <h4><a href="#">Tên sản phẩm</a></h4>
+                                        <p class="quantity">1x - <span class="amount">100.000đ</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="bottom">
+                            <div class="total">
+                                <span>Tổng </span>
+                                <span class="total-amount">235.000đ</span>
+                            </div>
+                            <a href="" class="btn animate">Thanh toán</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <a href="#" class="primary-btn signup-btn">Đăng nhập</a>
+                <a href="#" class="primary-btn signup-btn">Giỏ hàng</a> -->
+
+                <!-- when user login -->
+                <!-- <div class="header-mid-side">
+                    
+    
+                    <div class="sinlge-bar shopping">
+                        <a href="#" class="single-icon"><i
+                                class="header-mid-icon fa-solid fa-cart-shopping"></i> <span
+                                class="total-count">2</span></a>
+    
+                        <div class="shopping-item">
+                            <div class="dropdown-cart-header">
+                                <span>2 sản phẩm</span>
+                                <a href="#">Xem giỏ hàng</a>
+                            </div>
+                            <ul class="shopping-list">
+                                <li>
+                                    <div class="content-shopping-list-item">
+                                        <div class="remove-icon">
+                                            <a href="#" class="remove" title="Xóa sản phẩm"><i
+                                                    class="fa fa-remove"></i></a>
+                                        </div>
+                                        <a class="cart-img" href="#"><img
+                                                src="./assets/img/homepage/product01.png" alt="#"></a>
+                                        <div class="cart-product-deatil">
+                                            <h4><a href="#">Tên sản phẩm</a></h4>
+                                            <p class="quantity">1x - <span class="amount">100.000đ</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content-shopping-list-item">
+                                        <div class="remove-icon">
+                                            <a href="#" class="remove" title="Xóa sản phẩm"><i
+                                                    class="fa fa-remove"></i></a>
+                                        </div>
+                                        <a class="cart-img" href="#"><img
+                                                src="./assets/img/homepage/product01.png" alt="#"></a>
+                                        <div class="cart-product-deatil">
+                                            <h4><a href="#">Tên sản phẩm</a></h4>
+                                            <p class="quantity">1x - <span class="amount">100.000đ</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="bottom">
+                                <div class="total">
+                                    <span>Tổng </span>
+                                    <span class="total-amount">235.000đ</span>
+                                </div>
+                                <a href="" class="btn animate">Thanh toán</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div> -->
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>
@@ -590,6 +846,10 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- sử dụng box icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </body>
 
 </html>

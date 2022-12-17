@@ -1,0 +1,282 @@
+.photo-user{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+  }
+  
+  .id-header.user{
+    width: 2%;
+  }
+  
+  .header.table-user{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    text-align: center;
+  }
+  
+  .name.user{
+    width: 15%;
+  }
+  
+  .img.user{
+    width: 10%;
+    text-align: center;
+  }
+  
+  .birthday.user{
+    width: 10%;
+  }
+  
+  .email.user{
+    width: 15%;
+  }
+  
+  .phone.user{
+    width: 10%;
+  }
+  
+  .action.user{
+    width: 2%;
+  }
+  
+  .add-btn.user{
+    height: 45px;
+    width: 170px;
+    text-transform: uppercase;
+  }
+  
+  table.th{
+    /* text-align: center; */
+  }
+  
+  .form-control.add-infor.user{
+    position: relative;
+  }
+  /* trick để đổi choose file -> chọn tệp */
+  .form-control.add-infor.user::after{
+    position: absolute;
+    position: absolute;
+    content: "Chọn tệp";
+    width: 95px;
+    height: 154px;
+    height: 1;
+    top: 0;
+    left: 0px;
+    background-color: #fff;
+    text-align: center;
+    /* display: flex; */
+    /* align-content: center; */
+    padding: 8px 0 0 0;
+    
+  }
+  
+  .form-control.add-infor.user:hover:after{
+    background-color: #e5e5e5;
+  }
+  
+
+  /* ===========CATEGORY=============== */
+  /* ================================== */
+
+.photo-category{
+    display: block;
+    width: 100%;
+    height: 130px ;
+}
+
+.name.category{
+    width: 18%;
+}
+
+.slug.category{
+    width: 18%;
+}
+
+.img.category{
+    width: 30%;
+}
+
+.descript.category{
+    width: 25%;
+}
+
+.action.category{
+    width: 3%;
+}
+
+ /* ===========SILDER=============== */
+  /* ================================== */
+
+  .photo-slider{
+    display: block;
+    width: 100%;
+    height: 130px ;
+}
+
+.name.slider{
+    width: 30%;
+}
+
+.slug.slider{
+    /* width: 18%; */
+}
+
+.img.slider{
+    /* width: 30%; */
+}
+
+.ordinal-numbers.slider{
+    width: 10%;
+}
+
+.action.slider{
+    width: 3%;
+}
+
+/* ===========RATE=============== */
+  /* ================================== */
+
+  .id-header.rate{
+    width: 1%;
+  }
+  .photo-rate{
+    display: block;
+    width: 100%;
+    height: 130px ;
+}
+
+.name-user.rate{
+    width: 20%;
+}
+
+.date.rate{
+    /* width: 18%; */
+}
+
+.content.rate{
+    width: 30%;
+}
+
+.rate-product.rate{
+    width: 10%;
+}
+
+.for-product.rate{
+    width: 10%;
+}
+
+.action.rate{
+    width: 3%;
+}
+
+/* ===========QUESTION=============== */
+  /* ================================== */
+
+  .id-header.question{
+    width: 1%;
+  }
+  .photo-question{
+    display: block;
+    width: 100%;
+    height: 130px ;
+}
+
+.name-user.question{
+    width: 20%;
+}
+
+.date.question{
+    /* width: 18%; */
+}
+
+.status.question{
+    width: 5%;
+}
+
+.content.question{
+    width: 50%;
+}
+
+.action.question{
+    width: 3%;
+}
+
+/* ===========ORDER=============== */
+  /* ================================== */
+
+  .id-header.order{
+    width: 1%;
+  }
+
+.name-customer.order{
+    width: 15%;
+}
+
+.address.order{
+    width: 30%;
+}
+
+.total.order{
+    width: 10%;
+}
+
+.ship-code.order{
+    width: 10%;
+}
+
+.status.order{
+  width: 15%;
+}
+
+.payment.order{
+  width: 15%;
+}
+
+.action.order{
+    width: 3%;
+}
+/* =========== order-detail=========== */
+.id-header.order-detail{
+  width: 1%;
+}
+
+.name-product.order-detail{
+  width: 30%;
+}
+
+.img.order-detail{
+  width: 30%;
+}
+
+.price.order-detail{
+  width: 10%;
+}
+
+.qty.order-detail{
+  width: 10%;
+}
+
+.action.order-detail{
+  width: 3%;
+}
+
+.photo-order-item{
+  width: 150px;
+  height: 30%;
+}
+
+td.address-all {
+  word-break: break-word;
+  white-space: pre-line;
+  max-width: 30%; 
+  vertical-align: top;
+  /*padding: 5px;*/
+  /*border: 1px solid black;*/
+}
+
+
+/* ===========discount=============== */
+.id-header.discount{
+  width: 3%;
+}
