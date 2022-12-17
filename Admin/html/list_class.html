@@ -366,12 +366,12 @@
                   <thead>
                     <tr>
                       <th class="id-header user">Mã</th>
-                      <th class="name user">Họ tên</th>
-                      <th class="img user">Ảnh</th>
-                      <th class="birthday user">Ngày sinh</th>
-                      <th class="email user">Email</th>
-                      <th class="phone user">Số điện thoại</th>
-                      <th class="address user">Địa chỉ</th>
+                      <th class="name user">Tên lớp</th>
+                      <th class="img user">Thời gian học</th>
+                      <th class="birthday user">Ngay bắt đầu</th>
+                      <th class="email user">Giá</th>
+                      <th class="phone user">Phòng</th>
+                      <!-- <th class="address user">Địa chỉ</th> -->
                       <th class="action user">Thao tác</th>
 
                     </tr>
@@ -380,27 +380,49 @@
                     <tr>
                       <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>1</strong></td>
                       <td>
-                        Nguyễn Hoàng Trung
+                        Gym cho nam giới
                       </td>
                       <td>
-                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                          <li>
-                            <img src="../assets/img/avatars/1.png" alt="Anh dai dien" class="photo-user">
-
-                          </li>
-                        </ul>
+                        5h30 - 7h00
                       </td>
                       <td>
                         <span>1/1/2022</span>
-                        <!-- <span class="badge bg-label-primary me-1">Active</span> -->
                       </td>
                       <td>
-                        nguyenhoangtrung@gmail.com
+                        5.000.000 đ
                       </td>
-                      <td>0123456789</td>
+                      <td> 1</td>
                       <td>
-                        Dắk lắk, Buôn Ma Thuột, xã Hòa Phú, đường nào đ
+                        <div class="dropdown">
+                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalLong"><i
+                                class="bx bx-info-circle"></i> Xem thông tin chi tiết</a>
+
+                            <a class="dropdown-item" href="edit_employee.html"><i class="bx bx-edit-alt me-1"></i>
+                              Sửa</a>
+                            <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Xóa</a>
+                          </div>
+                        </div>
                       </td>
+                    </tr>
+                    <tr>
+                      <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>1</strong></td>
+                      <td>
+                        Gym cho nam giới
+                      </td>
+                      <td>
+                        5h30 - 7h00
+                      </td>
+                      <td>
+                        <span>1/1/2022</span>
+                      </td>
+                      <td>
+                        5.000.000 đ
+                      </td>
+                      <td> 1</td>
                       <td>
                         <div class="dropdown">
                           <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -418,7 +440,7 @@
                       </td>
                     </tr>
 
-                    <tr>
+                    <!-- <tr>
                       <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>1</strong></td>
                       <td>
                         Nguyễn Hoàng Trung
@@ -433,7 +455,6 @@
                       </td>
                       <td>
                         <span>1/1/2022</span>
-                        <!-- <span class="badge bg-label-primary me-1">Active</span> -->
                       </td>
                       <td>
                         nguyenhoangtrung@gmail.com
@@ -458,9 +479,9 @@
                         </div>
                       </td>
 
-                    </tr>
+                    </tr> -->
 
-                    <tr>
+                    <!-- <tr>
                       <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>1</strong></td>
                       <td>
                         Nguyễn Hoàng Trung
@@ -474,8 +495,8 @@
                         </ul>
                       </td>
                       <td>
-                        <span>1/1/2022</span>
-                        <!-- <span class="badge bg-label-primary me-1">Active</span> -->
+                        <span>1/1/2022</span> -->
+                        <!-- <span class="badge bg-label-primary me-1">Active</span>
                       </td>
                       <td>
                         nguyenhoangtrung@gmail.com
@@ -489,9 +510,6 @@
                           <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
                             <i class="bx bx-dots-vertical-rounded"></i>
                           </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Xem
-                              thông tin chi tiết</a>
 
                             <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i>
                               Sửa</a>
@@ -499,14 +517,16 @@
                           </div>
                         </div>
                       </td>
+                    </tr> -->
                   </tbody>
                   <tfoot class="table-border-bottom-0">
                     <tr>
                       <th class="id-header user">Mã</th>
-                      <th class="name user">Họ tên</th>
-                      <th class="img user">Ảnh</th>
-                      <th class="birthday user">Ngày sinh</th>
-                      <th class="email user">Email</th>
+                      <th class="name user">Tên lớp</th>
+                      <th class="img user">Thời gian học</th>
+                      <th class="birthday user">Ngay bắt đầu</th>
+                      <th class="email user">Giá</th>
+                      <th class="phone user">Phòng</th>
                       <th class="action user">Thao tác</th>
                     </tr>
                   </tfoot>
